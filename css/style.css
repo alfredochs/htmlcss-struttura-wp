@@ -11,8 +11,8 @@
     margin-bottom: 20px;
 }
 .pink{
-    background-color: #D77FE0;
-    height: 50px;
+    background-color: #E579E6;
+    height: 100px;
 }
 .yellow{
     background-color: #E1D67A;
@@ -20,39 +20,43 @@
 }
 .blue {
     background-color: #0384FF;
+    margin-bottom: 0;
 }
 .header-blue{
     float: none;
     height: 50px;
     background-color: #ABCFE7;
 }
-
+/* Il clearfix vanno sempre le stesse proprietà e
+e va sempre nel contenitore, per ciò andrà ad applicare
+a tutti gli elementi all'interno. */
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
   }
-
-aside{
+.color-size{
     height: 300px;
-    width: 20%;
     background-color: #ABCFE7;
+
+}
+aside{
+    width: 20%;
   }
 
 .left{
     float: left;
+    margin-right: 20px;
   }
 
 .middle{
     float: left;
-    height: 300px;
     width: calc(60% - 40px);
-    background-color: #ABCFE7;
-    margin-left: 20px;
-  }
+}
 
 .right{
     float: right;
+    margin-left: 20px;
 }
 
 .top{
